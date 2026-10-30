@@ -1,0 +1,60 @@
+{
+  "prepared_date": "2026-10-30",
+  "checkpoint_copies": [
+    {
+      "filename": "dinobloom_bal_production.pth",
+      "bytes": 342993414,
+      "sha256": "f2ba4f65c1c292a1565b069a2d64f09788b1f60c84e8bd6acc299c2b556b192e",
+      "source_copy_match": true
+    },
+    {
+      "filename": "neutrophil_expert_finetuned.pth",
+      "bytes": 342978594,
+      "sha256": "e72b105ff22b9d1dacca3ebc316d1628919de316c4863dffd7066a9eaf79e348",
+      "source_copy_match": true
+    }
+  ],
+  "checkpoint_load_and_forward_report": "checkpoint_validation.json",
+  "synthetic_software_tests": {
+    "command": "python -m unittest discover -s tests -v",
+    "tests_run": 46,
+    "passed": 46,
+    "failed": 0
+  },
+  "software_test_environment": {
+    "python": "3.12.14",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "opencv-python-headless": "4.11.0.86",
+    "scikit-image": "0.25.2",
+    "tifffile": "2024.8.30",
+    "Pillow": "13.0.0",
+    "scipy": "1.17.1"
+  },
+  "python_files_syntax_checked": [
+    "install_lab_environment.py",
+    "run_pipeline.py",
+    "bal_pipeline.py",
+    "tests/test_distribution.py",
+    "tests/test_pipeline.py",
+    "scripts/get_models.py",
+    "scripts/verify_models.py",
+    "reference/original_scripts/apply_neutrophil_expert.py",
+    "reference/original_scripts/train_expert_neutrophil.py",
+    "reference/original_scripts/test_neutrophi_expert_v2.py",
+    "reference/original_scripts/train_production_model.py",
+    "reference/original_scripts/full_slide_biological_analysis_production_model.py"
+  ],
+  "notebook": {
+    "schema_valid": true,
+    "code_cells_syntax_checked": 7,
+    "outputs_cleared": true
+  },
+  "limits": [
+    "No real-slide end-to-end Cellpose run was performed during this repository preparation.",
+    "The full pinned installation environment has not been freshly installed in this preparation.",
+    "Checkpoint loading used the separate versions recorded in checkpoint_validation.json.",
+    "No new GitHub repository or release has been published.",
+    "Zenodo DOI and project-specific licence have not been supplied."
+  ]
+}

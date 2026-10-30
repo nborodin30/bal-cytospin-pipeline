@@ -1,0 +1,54 @@
+{
+  "release_tag": "thesis-v1.0",
+  "models": [
+    {
+      "filename": "dinobloom_bal_production.pth",
+      "bytes": 342993414,
+      "sha256": "f2ba4f65c1c292a1565b069a2d64f09788b1f60c84e8bd6acc299c2b556b192e",
+      "role": "eight-class supervised production classifier",
+      "source_relative_path": "production_model/dinobloom_bal_production.pth",
+      "class_order": [
+        "Macrophage",
+        "Macrophage_with_particles",
+        "Neutrophil",
+        "Erythrocyte",
+        "Lymphocyte",
+        "Monocyte",
+        "Eosinophil",
+        "Junk"
+      ],
+      "architecture": "vit_base_patch14_dinov2",
+      "image_size": 224,
+      "global_pool": "avg",
+      "state_dict": "plain",
+      "tta": "none"
+    },
+    {
+      "filename": "neutrophil_expert_finetuned.pth",
+      "bytes": 342978594,
+      "sha256": "e72b105ff22b9d1dacca3ebc316d1628919de316c4863dffd7066a9eaf79e348",
+      "role": "final fine-tuned three-class neutrophil expert",
+      "source_relative_path": "neutrophil_expert_finetuned.pth",
+      "class_order": [
+        "Immature_Neu",
+        "Mature_Neu_SiglecF+",
+        "Mature_Neu_SiglecF-"
+      ],
+      "architecture": "vit_base_patch14_dinov2",
+      "image_size": 224,
+      "global_pool": "avg",
+      "state_dict": "plain",
+      "tta": "mean logits over 0, 90, 180, 270 degrees"
+    }
+  ],
+  "segmentation": {
+    "library": "cellpose==4.0.6",
+    "model": "cpsam",
+    "distribution": "downloaded and cached by upstream Cellpose at first use; not redistributed here"
+  },
+  "archival_models": {
+    "destination": "Zenodo",
+    "doi": null,
+    "status": "not yet supplied"
+  }
+}

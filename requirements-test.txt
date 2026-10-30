@@ -1,0 +1,8 @@
+numpy==1.26.4
+pandas==2.2.3
+scipy==1.15.2
+opencv-python-headless==4.11.0.86
+scikit-image==0.25.2
+tifffile==2024.8.30
+imagecodecs==2024.12.30
+Pillow==11.1.0

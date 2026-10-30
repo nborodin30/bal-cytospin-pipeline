@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite the associated master's thesis and the underlying methods when using this software."
+title: "BAL cytospin cell classification: production inference pipeline"
+type: software
+authors:
+  - family-names: Borodin
+    given-names: Mykyta
+version: 1.0.0
+date-released: 2026-10-30
+abstract: "Cellpose-SAM segmentation, DinoBloom-Base production classification and a fine-tuned neutrophil expert for BAL cytospin images."

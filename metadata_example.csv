@@ -1,0 +1,4 @@
+filename,animal_id,treatment,timepoint
+mouse01_a.czi,mouse01,Sham,12h
+mouse01_b.czi,mouse01,Sham,12h
+mouse02_a.czi,mouse02,Treatment_A,12h
